@@ -11,5 +11,5 @@ Problem #3 (Kubernetes)
 2) Refer to https://kubernetes.io/docs/tasks/tools/install-kubectl/#before-you-begin for installation steps.
 3) Again, since I'm using MacOS, download the binary from `$ curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/darwin/amd64/kubectl"` then make the file executable `$ chmod +x ./kubectl`. Lastly, add the kubectl to your path `$ sudo mv ./kubectl /usr/local/bin/kubectl`
 
-##Bring up the KUBE!
+## Bring up the KUBE!
 1) 
