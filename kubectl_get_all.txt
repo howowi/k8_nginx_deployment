@@ -1,0 +1,14 @@
+Owis-MacBook-Pro-4:k8_p3 owiweihow$ kubectl get all
+NAME                                     READY   STATUS    RESTARTS   AGE
+pod/nginx-hello-world-85957b65c6-x9txz   1/1     Running   0          38m
+pod/nginx-hello-world-85957b65c6-xx6zn   1/1     Running   0          38m
+
+NAME                        TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)        AGE
+service/kubernetes          ClusterIP   10.96.0.1        <none>        443/TCP        22h
+service/nginx-hello-world   NodePort    10.101.125.102   <none>        80:32042/TCP   31m
+
+NAME                                READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/nginx-hello-world   2/2     2            2           38m
+
+NAME                                           DESIRED   CURRENT   READY   AGE
+replicaset.apps/nginx-hello-world-85957b65c6   2         2         2       38m
