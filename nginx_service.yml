@@ -5,7 +5,7 @@ metadata:
   labels:
     app: nginx-hello-world
 spec:
-  type: NodePort
+  type: NodePort # it uses the worker node IP address and port defined in nodePort.
   ports:
   - port: 80
     nodePort: 32042
