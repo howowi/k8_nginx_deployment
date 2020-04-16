@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: nginx-hello-world
 spec:
-  replicas: 2
+  replicas: 2 # 2 nginx pods will be created
   selector:
     matchLabels:
       app: nginx-hello-world
@@ -16,4 +16,4 @@ spec:
       - name: nginx-hello-world
         image: nginxdemos/hello:latest
         ports:
-        - containerPort: 80
+        - containerPort: 80 # the port that nginx containers use
